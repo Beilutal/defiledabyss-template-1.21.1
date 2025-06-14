@@ -1,0 +1,14 @@
+{
+  "itemGroup.defiledabyss": "Example Mod Tab",
+  "block.defiledabyss.example_block": "Example Block",
+  "item.defiledabyss.example_item": "Example Item",
+
+  "defiledabyss.configuration.title": "Defiled Abyss Configs",
+  "defiledabyss.configuration.section.defiledabyss.common.toml": "Defiled Abyss Configs",
+  "defiledabyss.configuration.section.defiledabyss.common.toml.title": "Defiled Abyss Configs",
+  "defiledabyss.configuration.items": "Item List",
+  "defiledabyss.configuration.logDirtBlock": "Log Dirt Block",
+  "defiledabyss.configuration.magicNumberIntroduction": "Magic Number Text",
+  "defiledabyss.configuration.magicNumber": "Magic Number",
+  "item.defiledabyss.gluttonyore": "Gluttonyore"
+}
