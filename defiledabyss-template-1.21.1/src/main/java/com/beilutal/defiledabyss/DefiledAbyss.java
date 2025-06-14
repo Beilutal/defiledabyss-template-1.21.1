@@ -36,6 +36,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static com.beilutal.defiledabyss.item.DefiledAbyssItems.GLUTTONYORE;
+import static com.beilutal.defiledabyss.item.DefiledAbyssItems.GREENAPPLE;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(DefiledAbyss.MODID)
@@ -113,6 +114,7 @@ public class DefiledAbyss {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(GLUTTONYORE);
+            event.accept(GREENAPPLE);
         }
     }
 

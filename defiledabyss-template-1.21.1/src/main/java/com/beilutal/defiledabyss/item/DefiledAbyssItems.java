@@ -11,7 +11,8 @@ public class DefiledAbyssItems {
 
     public static final DeferredItem<Item> GLUTTONYORE = ITEMS.register("gluttonyore",
             () -> new Item(new Item.Properties()));
-
+    public static final DeferredItem<Item> GREENAPPLE = ITEMS.register("greenapple",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){
