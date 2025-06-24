@@ -11,5 +11,19 @@
   "defiledabyss.configuration.magicNumberIntroduction": "Magic Number Text",
   "defiledabyss.configuration.magicNumber": "Magic Number",
   "item.defiledabyss.gluttonyore": "饕餮矿",
-  "item.defiledabyss.greenapple": "青苹果"
+  "item.defiledabyss.greenapple": "青苹果",
+  "block.defiledabyss.raw_gluttonyore": "饕餮原矿",
+  "block.defiledabyss.gluttonystone": "饕餮圆石",
+  "item.defiledabyss.sacrosanct_grand_ceremony": "塞卡逻森大典",
+  "item.defiledabyss.abyssrag": "深渊破布",
+  "item.defiledabyss.abyssiron_ingot": "渊铁锭",
+  "item.defiledabyss.profane_shard": "邪秽碎片",
+  "item.defiledabyss.carrion_crow_feather": "告死鸦羽",
+  "item.defiledabyss.abyssal_horn": "渊羊号角",
+  "item.defiledabyss.abyssal_mutton": "渊羊肉",
+  "item.defiledabyss.abyss_totem": "深渊图腾",
+  "item.defiledabyss.spinecrusher_haft": "碎脊锤手柄",
+  "item.defiledabyss.binding_fragment": "缚渊碎片",
+  "item.defiledabyss.defiledabyss_box": "渎渊盒",
+  "item.defiledabyss.gloomstone": "黯渊石"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "defiledabyss:block/raw_gluttonyore"
+  }
+}

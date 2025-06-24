@@ -1,5 +1,6 @@
 package com.beilutal.defiledabyss;
 
+import com.beilutal.defiledabyss.block.DefiledAbyssBlocks;
 import com.beilutal.defiledabyss.item.DefiledAbyssItems;
 import org.slf4j.Logger;
 
@@ -35,8 +36,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import static com.beilutal.defiledabyss.item.DefiledAbyssItems.GLUTTONYORE;
-import static com.beilutal.defiledabyss.item.DefiledAbyssItems.GREENAPPLE;
+import static com.beilutal.defiledabyss.item.DefiledAbyssItems.*;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(DefiledAbyss.MODID)
@@ -89,6 +89,7 @@ public class DefiledAbyss {
         NeoForge.EVENT_BUS.register(this);
 
         DefiledAbyssItems.register(modEventBus);
+        DefiledAbyssBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -115,6 +116,20 @@ public class DefiledAbyss {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(GLUTTONYORE);
             event.accept(GREENAPPLE);
+            event.accept(ABYSSRAG);
+            event.accept(ABYSSIRON_INGOT);
+            event.accept(PROFANE_SHARD);
+            event.accept(CARRION_CROW_FEATHER);
+            event.accept(ABYSSAL_HORN);
+            event.accept(ABYSSAL_MUTTON);
+            event.accept(ABYSS_TOTEM);
+            event.accept(SPINECRUSHER_HAFT);
+
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(DefiledAbyssBlocks.RAW_GLUTTONYORE);
+            event.accept(DefiledAbyssBlocks.GLUTTONYSTONE);
         }
     }
 
