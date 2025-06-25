@@ -44,6 +44,14 @@ public class DefiledAbyssCreativeModeTabs {
                         output.accept(DefiledAbyssItems.ABYSSAL_MUTTON);
                     } )).build());
 
+    public static final Supplier<CreativeModeTab> ABYSS_TOOLS_TAB = CREATIVE_MODE_TAB.register("abyss_tools_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(DefiledAbyssItems.ABYSSAL_HORN.get()))
+                    .title(Component.translatable("creativetab.defiledabyss.abyss_tools"))
+                    .displayItems(((itemDisplayParameters, output) -> {
+                        output.accept(DefiledAbyssItems.ABYSSAL_HORN);
+
+                    } )).build());
+
             public static void register(IEventBus eventBus){
                 CREATIVE_MODE_TAB.register(eventBus);
             }

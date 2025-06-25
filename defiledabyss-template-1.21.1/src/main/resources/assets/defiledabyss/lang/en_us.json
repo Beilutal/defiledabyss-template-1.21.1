@@ -1,8 +1,4 @@
 {
-  "itemGroup.defiledabyss": "Example Mod Tab",
-  "block.defiledabyss.example_block": "Example Block",
-  "item.defiledabyss.example_item": "Example Item",
-
   "defiledabyss.configuration.title": "Defiled Abyss Configs",
   "defiledabyss.configuration.section.defiledabyss.common.toml": "Defiled Abyss Configs",
   "defiledabyss.configuration.section.defiledabyss.common.toml.title": "Defiled Abyss Configs",
@@ -30,5 +26,6 @@
   "creativetab.defiledabyss.abyss_blocks": "渎渊.方块",
   "creativetab.defiledabyss.abyss_foods": "渎渊.食物",
   "creativetab.defiledabyss.abyss_tools": "渎渊.工具与实用物品",
-  "creativetab.defiledabyss.abyss_weapons": "渎渊.武器装备"
+  "creativetab.defiledabyss.abyss_weapons": "渎渊.武器装备",
+  "curios.identifier.accessory": "配饰"
 }
