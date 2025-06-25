@@ -1,6 +1,7 @@
 package com.beilutal.defiledabyss;
 
 import com.beilutal.defiledabyss.block.DefiledAbyssBlocks;
+import com.beilutal.defiledabyss.item.DefiledAbyssCreativeModeTabs;
 import com.beilutal.defiledabyss.item.DefiledAbyssItems;
 import org.slf4j.Logger;
 
@@ -62,13 +63,6 @@ public class DefiledAbyss {
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
     // Creates a creative tab with the id "defiledabyss:example_tab" for the example item, that is placed after the combat tab
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.defiledabyss")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-            }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -87,6 +81,8 @@ public class DefiledAbyss {
         // Note that this is necessary if and only if we want *this* class (DefiledAbyss) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        DefiledAbyssCreativeModeTabs.register(modEventBus);
 
         DefiledAbyssItems.register(modEventBus);
         DefiledAbyssBlocks.register(modEventBus);
@@ -114,22 +110,11 @@ public class DefiledAbyss {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(GLUTTONYORE);
-            event.accept(GREENAPPLE);
-            event.accept(ABYSSRAG);
-            event.accept(ABYSSIRON_INGOT);
-            event.accept(PROFANE_SHARD);
-            event.accept(CARRION_CROW_FEATHER);
-            event.accept(ABYSSAL_HORN);
-            event.accept(ABYSSAL_MUTTON);
-            event.accept(ABYSS_TOTEM);
-            event.accept(SPINECRUSHER_HAFT);
 
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(DefiledAbyssBlocks.RAW_GLUTTONYORE);
-            event.accept(DefiledAbyssBlocks.GLUTTONYSTONE);
+
         }
     }
 

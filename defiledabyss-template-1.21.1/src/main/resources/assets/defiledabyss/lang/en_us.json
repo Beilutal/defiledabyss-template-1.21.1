@@ -25,5 +25,10 @@
   "item.defiledabyss.spinecrusher_haft": "碎脊锤手柄",
   "item.defiledabyss.binding_fragment": "缚渊碎片",
   "item.defiledabyss.defiledabyss_box": "渎渊盒",
-  "item.defiledabyss.gloomstone": "黯渊石"
+  "item.defiledabyss.gloomstone": "黯渊石",
+  "creativetab.defiledabyss.abyss_materials": "渎渊.原材料",
+  "creativetab.defiledabyss.abyss_blocks": "渎渊.方块",
+  "creativetab.defiledabyss.abyss_foods": "渎渊.食物",
+  "creativetab.defiledabyss.abyss_tools": "渎渊.工具与实用物品",
+  "creativetab.defiledabyss.abyss_weapons": "渎渊.武器装备"
 }
