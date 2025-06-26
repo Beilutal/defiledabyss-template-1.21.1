@@ -22,7 +22,7 @@ public class DefiledAbyssItems {
     public static final DeferredItem<Item> CARRION_CROW_FEATHER = ITEMS.register("carrion_crow_feather",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ABYSSAL_HORN = ITEMS.register("abyssal_horn",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(10)));
     public static final DeferredItem<Item> ABYSSAL_MUTTON = ITEMS.register("abyssal_mutton",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ABYSS_TOTEM = ITEMS.register("abyss_totem",

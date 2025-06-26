@@ -49,7 +49,6 @@ public class DefiledAbyssCreativeModeTabs {
                     .title(Component.translatable("creativetab.defiledabyss.abyss_tools"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(DefiledAbyssItems.ABYSSAL_HORN);
-
                     } )).build());
 
             public static void register(IEventBus eventBus){
