@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#B#",
+    "III",
+    "#R#"
+  ],
+  "key": {
+      "#": {
+        "item": "defiledabyss:profane_shard"
+      },
+      "B": {
+        "item": "minecraft:bone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "R": {
+        "item": "minecraft:rotten_flesh"
+      }
+  },
+  "result": {
+    "id": "defiledabyss:abyssiron_ingot",
+    "count": 3
+  }
+}
