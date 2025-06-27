@@ -1,11 +1,13 @@
 package com.beilutal.defiledabyss;
 
 import com.beilutal.defiledabyss.block.DefiledAbyssBlocks;
+import com.beilutal.defiledabyss.datagen.DefiledAbyssDataGenerator;
 import com.beilutal.defiledabyss.item.DefiledAbyssCreativeModeTabs;
 import com.beilutal.defiledabyss.item.DefiledAbyssItems;
 import com.google.common.collect.Iterables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.WritableRegistry;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.data.loot.LootTableProvider;
@@ -19,6 +21,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.level.AlterGroundEvent;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -81,6 +85,26 @@ public class DefiledAbyss {
         DefiledAbyssBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+
+    public class DefiledAbyssDataGenerator {
+
+        private final DataGenerator dataGenerator;
+        private final ExistingFileHelper existingFileHelper;
+
+        public DefiledAbyssDataGenerator(DataGenerator dataGenerator, ExistingFileHelper existingFileHelper) {
+            this.dataGenerator = dataGenerator;
+            this.existingFileHelper = existingFileHelper;
+        }
+
+        public void addProvider(IEventBus modEventBus) {
+            modEventBus.addListener(this::generateData);
+        }
+
+        private void generateData(IEventBus eventBus) {
+            // Add the specific data providers for your mod
+        }
     }
 
 

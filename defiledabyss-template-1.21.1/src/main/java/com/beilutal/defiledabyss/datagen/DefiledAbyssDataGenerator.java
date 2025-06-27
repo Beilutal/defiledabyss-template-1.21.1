@@ -1,6 +1,7 @@
 package com.beilutal.defiledabyss.datagen;
 
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.loot.LootTableProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 public class DefiledAbyssDataGenerator {
