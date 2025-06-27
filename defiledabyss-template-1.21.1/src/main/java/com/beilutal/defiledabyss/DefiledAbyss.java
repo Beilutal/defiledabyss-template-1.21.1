@@ -88,24 +88,6 @@ public class DefiledAbyss {
     }
 
 
-    public class DefiledAbyssDataGenerator {
-
-        private final DataGenerator dataGenerator;
-        private final ExistingFileHelper existingFileHelper;
-
-        public DefiledAbyssDataGenerator(DataGenerator dataGenerator, ExistingFileHelper existingFileHelper) {
-            this.dataGenerator = dataGenerator;
-            this.existingFileHelper = existingFileHelper;
-        }
-
-        public void addProvider(IEventBus modEventBus) {
-            modEventBus.addListener(this::generateData);
-        }
-
-        private void generateData(IEventBus eventBus) {
-            // Add the specific data providers for your mod
-        }
-    }
 
 
     private void commonSetup(FMLCommonSetupEvent event) {

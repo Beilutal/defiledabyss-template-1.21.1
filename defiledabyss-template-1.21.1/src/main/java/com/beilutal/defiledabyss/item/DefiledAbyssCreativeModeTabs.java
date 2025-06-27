@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.awt.print.Book;
 import java.util.function.Supplier;
 
 public class DefiledAbyssCreativeModeTabs {
