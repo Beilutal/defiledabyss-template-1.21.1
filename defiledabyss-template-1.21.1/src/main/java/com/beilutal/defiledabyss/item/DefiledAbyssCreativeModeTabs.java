@@ -27,6 +27,7 @@ public class DefiledAbyssCreativeModeTabs {
                             output.accept(DefiledAbyssItems.ABYSSRAG);
                             output.accept(DefiledAbyssItems.GLUTTONYORE);
                             output.accept(DefiledAbyssItems.PROFANE_SHARD);
+                            output.accept(DefiledAbyssItems.GLUTTONY_INGOT);
                         } )).build());
 
     public static final Supplier<CreativeModeTab> ABYSS_BLOCKS_TAB = CREATIVE_MODE_TAB.register("abyss_blocks_tab",

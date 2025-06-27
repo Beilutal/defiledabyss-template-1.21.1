@@ -29,7 +29,8 @@ public class DefiledAbyssItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SPINECRUSHER_HAFT = ITEMS.register("spinecrusher_haft",
             () -> new Item(new Item.Properties()));
-
+    public static final DeferredItem<Item> GLUTTONY_INGOT = ITEMS.register("gluttony_ingot",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

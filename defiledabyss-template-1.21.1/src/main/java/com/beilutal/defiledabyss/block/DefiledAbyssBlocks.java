@@ -2,6 +2,7 @@ package com.beilutal.defiledabyss.block;
 
 import com.beilutal.defiledabyss.DefiledAbyss;
 import com.beilutal.defiledabyss.item.DefiledAbyssItems;
+import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -13,8 +14,12 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.IRegistryExtension;
+import org.checkerframework.checker.signature.qual.Identifier;
 
 import java.util.function.Supplier;
+
+import static net.minecraft.world.item.Items.registerItem;
 
 public class DefiledAbyssBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -29,6 +34,7 @@ public class DefiledAbyssBlocks {
                     .lightLevel(state -> 5) // 亮度5
                     .noOcclusion() // 允许光线穿透//
                     ));
+
 
     public static final DeferredBlock<Block> GLUTTONYSTONE = registerBlock("gluttonystone",
             ()-> new Block(BlockBehaviour.Properties.of()
