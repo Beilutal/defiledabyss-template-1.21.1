@@ -26,14 +26,8 @@ public class DefiledAbyssBlocks {
             DeferredRegister.createBlocks(DefiledAbyss.MODID);
 
     public static final DeferredBlock<Block> RAW_GLUTTONYORE = registerBlock("raw_gluttonyore",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_RED)
-                    .strength(3f) // 硬度3
-                    .requiresCorrectToolForDrops() // 需要正确工具
-                    .sound(SoundType.STONE)
-                    .lightLevel(state -> 5) // 亮度5
-                    .noOcclusion() // 允许光线穿透//
-                    ));
+            () -> new RawGluttonyoreBlock()
+            );
 
 
     public static final DeferredBlock<Block> GLUTTONYSTONE = registerBlock("gluttonystone",
@@ -42,7 +36,7 @@ public class DefiledAbyssBlocks {
                     .strength(3f) // 硬度3
                     .requiresCorrectToolForDrops() // 需要正确工具
                     .sound(SoundType.STONE)
-                    .lightLevel(state -> 0) // 亮度0
+                    .lightLevel(state -> 0) //亮度0
                     .noOcclusion() // 允许光线穿透//
             ));
 
